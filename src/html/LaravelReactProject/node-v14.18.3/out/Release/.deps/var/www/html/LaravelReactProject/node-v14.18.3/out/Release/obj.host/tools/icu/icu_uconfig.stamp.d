@@ -1,0 +1,1 @@
+cmd_/var/www/html/LaravelReactProject/node-v14.18.3/out/Release/obj.host/tools/icu/icu_uconfig.stamp := touch /var/www/html/LaravelReactProject/node-v14.18.3/out/Release/obj.host/tools/icu/icu_uconfig.stamp

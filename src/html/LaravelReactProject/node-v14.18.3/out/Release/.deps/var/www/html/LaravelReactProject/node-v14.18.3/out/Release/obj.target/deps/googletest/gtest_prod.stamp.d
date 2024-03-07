@@ -1,0 +1,1 @@
+cmd_/var/www/html/LaravelReactProject/node-v14.18.3/out/Release/obj.target/deps/googletest/gtest_prod.stamp := touch /var/www/html/LaravelReactProject/node-v14.18.3/out/Release/obj.target/deps/googletest/gtest_prod.stamp
