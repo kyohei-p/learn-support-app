@@ -5,7 +5,7 @@ COPY php.ini /usr/local/etc/php/
 # Package & Library install
 RUN apt-get update \
  && apt-get install -y zlib1g-dev mariadb-client vim libzip-dev nodejs npm \
- && docker-php-ext-install zip pdo_mysql \
+ && docker-php-ext-install mysqli pdo_mysql \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
