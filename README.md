@@ -79,10 +79,21 @@ docker-compose up -d
 docker-compose exec php bash
 ```
 
+- マイグレーションの実行
+```
+php artisan migrate
+```
+
+could not find driver~のエラーが発生した場合、phpコンテナ内で以下を実行してください
+（ビルド時に実行するコマンドです）
+```
+docker-php-ext-install mysqli pdo_mysql
+```
+
 - nodeコンテナにログイン&開発サーバーを起動
 ```
 docker-compose exec node /bin/sh
-cd /var/www/diary-app
+cd /var/www/html/LaravelReactProject
 npm run dev
 ```
 
