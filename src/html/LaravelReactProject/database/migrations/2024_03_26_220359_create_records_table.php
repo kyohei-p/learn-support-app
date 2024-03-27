@@ -16,6 +16,13 @@ return new class extends Migration
             $table->string('title');
             $table->string('content');
             $table->timestamps();
+
+            $table->foreignId('category_id')->constrained();
+
+            // foreign()で外部キー制約を追加する場合に使用する
+            // $table->unsignedBigInteger('category_id');
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+
         });
     }
 
@@ -24,6 +31,11 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('records', function (Blueprint $table) {
+            $table->dropForeign(['category_id']);
+        });
+
         Schema::dropIfExists('records');
+
     }
 };
