@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreignId('category_id')->constrained();
+            $table->foreignId('user_id')->constrained();
 
             // foreign()で外部キー制約を追加する場合に使用する
             // $table->unsignedBigInteger('category_id');
@@ -33,6 +34,7 @@ return new class extends Migration
     {
         Schema::table('records', function (Blueprint $table) {
             $table->dropForeign(['category_id']);
+            $table->dropForeign(['user_id']);
         });
 
         Schema::dropIfExists('records');

@@ -20,21 +20,24 @@ class RecordsTableSeeder extends Seeder
                 'content' => 'Hello World!',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'category_id' => 1
+                'category_id' => 1,
+                'user_id' => 1
             ],
             [
                 'title' => 'sample2',
                 'content' => 'How are you doing?',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'category_id' => 3
+                'category_id' => 3,
+                'user_id' => 1
             ],
             [
                 'title' => 'sample3',
                 'content' => '指数関数 f(x)=2^x',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'category_id' => 2
+                'category_id' => 2,
+                'user_id' => 1
             ]
         ]);
     }
